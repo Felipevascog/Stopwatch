@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stopwatch and Countdown</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-5">Stopwatch and Countdown</h1>
+    <div class="text-center">
+        <button id="stopwatchBtn" class="btn btn-primary mr-3">Stopwatch</button>
+        <button id="countdownBtn" class="btn btn-primary">Countdown</button>
+    </div>
+    <div id="stopwatchSection" style="display: none;">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <button id="startStopBtn" class="btn btn-primary btn-block">Start/Stop</button>
+                <div id="stopwatchDisplay" class="text-center mt-3 stopwatch-display">00:00:00</div>
+                <div class="text-center mt-3">
+                    <button id="clearStopwatchBtn" class="btn btn-danger">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="countdownSection" style="display: none;">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <input id="countdownInput" type="number" min="0" max="9" class="form-control mb-3" placeholder="Enter time (in seconds)">
+                <button id="setCountdownBtn" class="btn btn-primary">Set</button>
+                <div id="countdownDisplay" class="text-center mt-3 countdown-display"></div>
+                <div class="text-center mt-3">
+                    <button id="startPauseCountdownBtn" class="btn btn-success">Start/Pause</button>
+                    <button id="clearCountdownBtn" class="btn btn-danger">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
